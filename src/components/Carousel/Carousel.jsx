@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import useApi from "../../hooks/useApi";
 import Card from "../Card/Card";
 import { settingsSlider } from "./settings";
+import styles from "./Carousel.module.css";
 
 const Carousel = ({ entity, title }) => {
   const [values, loading, error] = useApi(entity);
@@ -10,11 +11,7 @@ const Carousel = ({ entity, title }) => {
   return (
     <>
       <div>
-        <h1
-          style={{
-            color: "white",
-          }}
-        >
+        <h1 className={styles.carousel_title}>
           {title}
         </h1>
       </div>

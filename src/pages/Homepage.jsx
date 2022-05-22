@@ -8,19 +8,19 @@ const Homepage = () => {
   return (
     <>
       <Banner />
-      <Separator height={"40px"} />
+      <Separator height={"20px"} />
       <Carousel
         entity={apiEntity.popularMovies}
         title={"Peliculas populares"}
       />
-      <Separator height={"40px"} />
+      <Separator height={"20px"} />
       <Carousel
         entity={apiEntity.topRatedMovies}
         title="Peliculas mejor puntuadas"
       />
-      <Separator height={"40px"} />
+      <Separator height={"20px"} />
       <Carousel entity={apiEntity.popularTv} title="Series populares" />
-      <Separator height={"40px"} />
+      <Separator height={"20px"} />
       <Carousel entity={apiEntity.topRatedTv} title="Series mejor puntuadas" />
     </>
   );
