@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const tmdb = {
   urlBase: "https://api.themoviedb.org/3",
-  apiKey: "?api_key=4731f843be0ef719c516f748dad07f59",
+  apiKey: "?api_key=28fad05cd31585ea78dffedbe4da52c0",
   entity: {
     topRatedMovies: "/movie/top_rated",
     topRatedTv: "/tv/top_rated",
@@ -48,17 +48,6 @@ export const apiEntity = {
 export const apiLanguage = {
   english: "en",
   spanish: "es",
-};
-
-export const tryGetPopularMovies = async (page = 1) => {
-  try {
-    const res = await axios(
-      `https://api.themoviedb.org/3/movie/popular?api_key=4731f843be0ef719c516f748dad07f59&language=en-US&page=${page}`
-    );
-    return res.data.results;
-  } catch (error) {
-    return [];
-  }
 };
 
 export const apiBuilder = {

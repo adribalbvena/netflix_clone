@@ -26,9 +26,6 @@ const useApi = (entity, lang = apiLanguage.spanish, pagination = 1) => {
     getData();
   }, [page]);
 
-  const nextPage = () => {};
-  const previusPage = () => {};
-
   const [randomValue, setRandomValue] = useState(null);
   const [randomImg, setRandomImg] = useState(null);
 
