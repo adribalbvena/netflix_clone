@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { apiEntity } from "../../apiConfig";
 import useApi from "../../hooks/useApi";
 import Separator from "../Separator/Separator";
 import styles from "./Banner.module.css";
+import Buttons from "../Buttons/Buttons";
 
 const Banner = () => {
   const [movie, loading, error, randomMovie, backImg] = useApi(
@@ -30,17 +31,7 @@ const Banner = () => {
         <div className={styles.banner_description}>
           <h2>{loading ? "Loading..." : randomMovie?.overview}</h2>
         </div>
-        <div className={styles.banner_buttons}>
-          <button
-            className={styles.banner_button}
-            onClick={() => {
-              console.log(movie);
-            }}
-          >
-            Mas Informacion
-          </button>
-          <button className={styles.banner_button}>Reproducir</button>
-        </div>
+      <Buttons name1="Mas informacion" name2="Reproducir"/>
       </div>
     </div>
   );

@@ -56,38 +56,6 @@
   font-weight: lighter;
 } 
 
-.banner_buttons {
-  transition: 0.3s;
-  margin-top: 2em;
-  margin-left: 0.5em;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.banner_buttons button:nth-child(2) {
-  margin-left: 1em;
-  margin-bottom: 2em;
-}
-
-.banner_button {
-  width: 220px;
-  height: 55px;
-  background-color: rgba(224, 224, 224, 1);
-  color: rgb(0, 0, 0);
-  font-size: 1.2rem;
-  font-weight: bolder;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.banner_button:hover {
-  background-color: rgba(224, 224, 224, 0.2);
-  color: rgb(255, 255, 255);
-}
-
 .banner_header_content {
   transition: 0.3s;
   display: flex;
@@ -108,7 +76,7 @@
     to bottom,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0) 90%,
-    rgb(14, 13, 13) 100%
+    rgb(19, 19, 19) 100%
   );
 }
 
